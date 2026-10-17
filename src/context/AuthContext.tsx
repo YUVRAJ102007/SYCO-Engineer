@@ -24,10 +24,10 @@ interface AuthContextType {
 
 const INITIAL_ORDERS: Order[] = [
   {
-    id: 'AUR-829410',
+    id: 'ZNV-829410',
     date: '14 Oct 2026',
     customerName: 'Alex Morgan',
-    customerEmail: 'alex.morgan@auramart.io',
+    customerEmail: 'alex.morgan@zenvora.io',
     customerPhone: '+91 98765 43210',
     shippingAddress: {
       id: 'addr-1',
@@ -90,7 +90,7 @@ const INITIAL_ORDERS: Order[] = [
       {
         status: 'shipped',
         title: 'In Transit',
-        description: 'Departed sorting hub via Aura Express Courier',
+        description: 'Departed sorting hub via Zenvora Express Courier',
         time: '15 Oct 2026, 08:20 AM',
       },
       {
@@ -102,10 +102,10 @@ const INITIAL_ORDERS: Order[] = [
     ],
   },
   {
-    id: 'AUR-718293',
+    id: 'ZNV-718293',
     date: '28 Sep 2026',
     customerName: 'Alex Morgan',
-    customerEmail: 'alex.morgan@auramart.io',
+    customerEmail: 'alex.morgan@zenvora.io',
     customerPhone: '+91 98765 43210',
     shippingAddress: {
       id: 'addr-1',
@@ -170,7 +170,7 @@ const STAGE_DETAILS: Record<OrderStatus, { title: string; description: string }>
   placed: { title: 'Order Placed', description: 'Order received and logged in system' },
   confirmed: { title: 'Order Confirmed', description: 'Seller approved order and reserved inventory' },
   processing: { title: 'Packed in Hub', description: 'Item safely packaged with bubble wrap at warehouse' },
-  shipped: { title: 'Dispatched in Transit', description: 'Package in transit via Aura Logistics Express' },
+  shipped: { title: 'Dispatched in Transit', description: 'Package in transit via Zenvora Logistics Express' },
   out_for_delivery: { title: 'Out for Delivery', description: 'Delivery executive is nearby your address' },
   delivered: { title: 'Delivered Successfully', description: 'Package handed over and verified' },
   cancelled: { title: 'Cancelled', description: 'Order has been cancelled' },
@@ -181,21 +181,21 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [activePersonaId, setActivePersonaId] = useState<string>('persona-alex');
   const [currentUser, setCurrentUser] = useState<UserProfile>(() => {
-    return loadFromStorage<UserProfile>('aura_current_user', DEMO_PERSONAS[0].profile);
+    return loadFromStorage<UserProfile>('zenvora_current_user', DEMO_PERSONAS[0].profile);
   });
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(true);
   const [orders, setOrders] = useState<Order[]>(() => {
-    return loadFromStorage<Order[]>('aura_orders_history', INITIAL_ORDERS);
+    return loadFromStorage<Order[]>('zenvora_orders_history', INITIAL_ORDERS);
   });
 
   const { success, info } = useNotification();
 
   useEffect(() => {
-    saveToStorage('aura_current_user', currentUser);
+    saveToStorage('zenvora_current_user', currentUser);
   }, [currentUser]);
 
   useEffect(() => {
-    saveToStorage('aura_orders_history', orders);
+    saveToStorage('zenvora_orders_history', orders);
   }, [orders]);
 
   const switchPersona = (personaId: string) => {

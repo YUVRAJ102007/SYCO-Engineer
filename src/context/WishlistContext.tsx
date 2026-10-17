@@ -17,12 +17,15 @@ const WishlistContext = createContext<WishlistContextType | undefined>(undefined
 
 export const WishlistProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [wishlist, setWishlist] = useState<Product[]>(() => {
-    return loadFromStorage<Product[]>('aura_wishlist', []);
+    return (
+      loadFromStorage<Product[]>('zenvora_wishlist', null as any) ||
+      loadFromStorage<Product[]>('aura_wishlist', [])
+    );
   });
   const { success, info } = useNotification();
 
   useEffect(() => {
-    saveToStorage('aura_wishlist', wishlist);
+    saveToStorage('zenvora_wishlist', wishlist);
   }, [wishlist]);
 
   const isInWishlist = (productId: string) => {

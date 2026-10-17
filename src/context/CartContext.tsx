@@ -27,30 +27,30 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [cartItems, setCartItems] = useState<CartItem[]>(() => {
-    return loadFromStorage<CartItem[]>('aura_cart_items', []);
+    return loadFromStorage<CartItem[]>('zenvora_cart_items', []);
   });
 
   const [savedForLater, setSavedForLater] = useState<CartItem[]>(() => {
-    return loadFromStorage<CartItem[]>('aura_saved_for_later', []);
+    return loadFromStorage<CartItem[]>('zenvora_saved_for_later', []);
   });
 
   const [appliedCoupon, setAppliedCoupon] = useState<Coupon | null>(() => {
-    return loadFromStorage<Coupon | null>('aura_applied_coupon', null);
+    return loadFromStorage<Coupon | null>('zenvora_applied_coupon', null);
   });
 
   const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false);
   const { success, warning, info } = useNotification();
 
   useEffect(() => {
-    saveToStorage('aura_cart_items', cartItems);
+    saveToStorage('zenvora_cart_items', cartItems);
   }, [cartItems]);
 
   useEffect(() => {
-    saveToStorage('aura_saved_for_later', savedForLater);
+    saveToStorage('zenvora_saved_for_later', savedForLater);
   }, [savedForLater]);
 
   useEffect(() => {
-    saveToStorage('aura_applied_coupon', appliedCoupon);
+    saveToStorage('zenvora_applied_coupon', appliedCoupon);
   }, [appliedCoupon]);
 
   const addToCart = (product: Product, quantity = 1, selectedVariant?: string) => {

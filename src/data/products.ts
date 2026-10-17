@@ -59,8 +59,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'elec-laptop-02',
-    title: 'AuraAir 14 Pro Thin & Light Ultrabook (14" 2.8K OLED 90Hz, AMD Ryzen 7 7840U, 16GB LPDDR5, 512GB SSD, 1.2kg)',
-    brand: 'Aura',
+    title: 'ZenvoraAir 14 Pro Thin & Light Ultrabook (14" 2.8K OLED 90Hz, AMD Ryzen 7 7840U, 16GB LPDDR5, 512GB SSD, 1.2kg)',
+    brand: 'Zenvora',
     category: 'Electronics',
     subcategory: 'Laptops',
     price: 49990,
@@ -321,8 +321,8 @@ export const PRODUCTS: Product[] = [
   // ==================== FASHION ====================
   {
     id: 'fash-jacket-01',
-    title: 'Aura Atelier Italian Wool Tailored Blazer (Structured Fit, 100% Merino Wool Blend, Navy Blue)',
-    brand: 'Aura Atelier',
+    title: 'Zenvora Atelier Italian Wool Tailored Blazer (Structured Fit, 100% Merino Wool Blend, Navy Blue)',
+    brand: 'Zenvora Atelier',
     category: 'Fashion',
     subcategory: "Men's Clothing",
     price: 4499,
@@ -519,8 +519,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'home-air-01',
-    title: 'AuraPure H14 True HEPA Smart Air Purifier (Cleans 500 sq ft in 12 mins, Real-time PM2.5 AQI Display, Whisper Quiet 22dB)',
-    brand: 'Aura',
+    title: 'ZenvoraPure H14 True HEPA Smart Air Purifier (Cleans 500 sq ft in 12 mins, Real-time PM2.5 AQI Display, Whisper Quiet 22dB)',
+    brand: 'Zenvora',
     category: 'Home & Kitchen',
     subcategory: 'Air Purifiers',
     price: 8499,
@@ -578,8 +578,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'beauty-perfume-01',
-    title: 'Aura Santal & Black Pepper Extrait de Parfum 100ml (Long-Lasting 18h Sillage, Australian Sandalwood, Cardamom & Cedar)',
-    brand: 'Aura Fragrance',
+    title: 'Zenvora Santal & Black Pepper Extrait de Parfum 100ml (Long-Lasting 18h Sillage, Australian Sandalwood, Cardamom & Cedar)',
+    brand: 'Zenvora Fragrance',
     category: 'Beauty & Personal Care',
     subcategory: 'Perfumes & Fragrances',
     price: 2499,

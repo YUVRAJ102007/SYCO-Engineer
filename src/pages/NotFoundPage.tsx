@@ -19,7 +19,7 @@ export const NotFoundPage: React.FC = () => {
           to="/"
           className="px-6 py-3 bg-aura-600 hover:bg-aura-700 text-white font-bold text-xs rounded-xl shadow transition"
         >
-          Go to Aura's Home Page
+          Go to Zenvora's Home Page
         </Link>
         <Link
           to="/products"

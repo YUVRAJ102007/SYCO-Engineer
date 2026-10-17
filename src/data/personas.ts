@@ -9,7 +9,7 @@ export const DEMO_PERSONAS: Persona[] = [
     profile: {
       id: 'usr-001',
       name: 'Alex Morgan',
-      email: 'alex.morgan@auramart.io',
+      email: 'alex.morgan@zenvora.io',
       phone: '+91 98765 43210',
       avatarUrl: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=160&q=80',
       primeMember: true,
@@ -30,7 +30,7 @@ export const DEMO_PERSONAS: Persona[] = [
           id: 'addr-2',
           name: 'Alex Morgan (Office)',
           phone: '+91 98765 43210',
-          addressLine1: 'Aura Tech Tower, 6th Floor',
+          addressLine1: 'Zenvora Tech Tower, 6th Floor',
           addressLine2: 'Outer Ring Road, Bellandur',
           city: 'Bengaluru',
           state: 'Karnataka',
@@ -54,7 +54,7 @@ export const DEMO_PERSONAS: Persona[] = [
     profile: {
       id: 'usr-002',
       name: 'Priya Sharma',
-      email: 'priya.design@auramart.io',
+      email: 'priya.design@zenvora.io',
       phone: '+91 91234 56789',
       avatarUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80',
       primeMember: true,

@@ -27,7 +27,7 @@ const INITIAL_MESSAGES: ChatMessage[] = [
   {
     id: 'msg-ast-1',
     sender: 'assistant',
-    text: "Welcome to Aura's AI-Powered Shopping Concierge! 🌟\n\nI can cross-examine our product specifications, benchmark scores, price points, and verified reviews against your exact needs.\n\nTry asking me complex queries like:\n• \"I need a laptop under ₹60,000 for programming, machine learning, and gaming.\"\n• \"Best noise cancelling headphones under ₹10,000 for daily coding\"\n• \"Smartwatch with AMOLED and GPS under ₹5,000\"\n• \"Espresso machine with 15 bar pump and milk frother\"",
+    text: "Welcome to Zenvora's AI-Powered Shopping Concierge! 🌟\n\nI can cross-examine our product specifications, benchmark scores, price points, and verified reviews against your exact needs.\n\nTry asking me complex queries like:\n• \"I need a laptop under ₹60,000 for programming, machine learning, and gaming.\"\n• \"Best noise cancelling headphones under ₹10,000 for daily coding\"\n• \"Smartwatch with AMOLED and GPS under ₹5,000\"\n• \"Espresso machine with 15 bar pump and milk frother\"",
     timestamp: 'Just now',
     suggestedFollowUps: [
       'I need a laptop under ₹60,000 for programming, machine learning, and gaming.',

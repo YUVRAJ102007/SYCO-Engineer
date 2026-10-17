@@ -1,14 +1,14 @@
-# AURA | Next-Generation E-Commerce Marketplace
+# ZENVORA | Next-Generation E-Commerce Marketplace
 > **A Competition-Grade, Amazon-Inspired Commercial Marketplace Architecture**  
 > Built with **React 18**, **TypeScript**, **Tailwind CSS**, and **Vite**.
 
-![Aura Marketplace Brand](public/favicon.svg)
+![Zenvora Marketplace Brand](public/favicon.svg)
 
 ---
 
 ## 🌟 Executive Summary
 
-**AURA** is a full-featured commercial e-commerce marketplace crafted for competitive web development excellence. Rather than presenting a generic static template or basic clone, AURA provides an original brand identity, a complete customer shopping journey, realistic product datasets across 8 major departments, and five signature customer-centric innovations.
+**ZENVORA** is a full-featured commercial e-commerce marketplace crafted for competitive web development excellence. Rather than presenting a generic static template or basic clone, ZENVORA provides an original brand identity, a complete customer shopping journey, realistic product datasets across 8 major departments, and five signature customer-centric innovations.
 
 ---
 
@@ -44,7 +44,7 @@
 * Stepped workflow: Customer Information ➔ Delivery Address ➔ Shipping Speed (Prime Express vs Standard) ➔ Payment Simulator (UPI QR, Card, NetBanking, COD).
 * Coupon system supporting valid codes:
   * `WELCOME10` — 10% instant discount (orders > ₹999)
-  * `AURA500` — Flat ₹500 off (orders > ₹2,499)
+  * `ZENVORA500` — Flat ₹500 off (orders > ₹2,499)
   * `FESTIVE20` — 20% discount (orders > ₹4,999)
   * `STUDENT5` — 5% extra discount for students and developers
 

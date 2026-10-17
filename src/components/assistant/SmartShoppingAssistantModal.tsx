@@ -31,7 +31,7 @@ const INITIAL_MESSAGES: ChatMessage[] = [
   {
     id: 'msg-welcome',
     sender: 'assistant',
-    text: "Hello! I am Aura's Smart Shopping Assistant. Tell me what you're looking for, your budget constraints, or specific features you need, and I'll find and explain the best matching products from our catalogue.",
+    text: "Hello! I am Zenvora's Smart Shopping Assistant. Tell me what you're looking for, your budget constraints, or specific features you need, and I'll find and explain the best matching products from our catalogue.",
     timestamp: 'Just now',
     suggestedFollowUps: [
       'I need a laptop under ₹60,000 for programming, machine learning, and gaming.',
@@ -142,7 +142,7 @@ export const SmartShoppingAssistantModal: React.FC<SmartShoppingAssistantModalPr
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="font-bold text-base leading-tight">Aura Smart Shopping Assistant</h3>
+                <h3 className="font-bold text-base leading-tight">Zenvora Smart Shopping Assistant</h3>
                 <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-300 border border-cyan-400/30">
                   AI Rule-Engine v1.0
                 </span>

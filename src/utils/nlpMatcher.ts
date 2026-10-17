@@ -68,7 +68,7 @@ export function parseUserQuery(query: string): ExtractedQueryIntent {
   });
 
   // Extract Brand Mentions
-  const brandKeywords = ['nexus', 'aura', 'soundpulse', 'zenith', 'lumina', 'veloce', 'aerofit', 'omnibrew', 'dermaglow'];
+  const brandKeywords = ['nexus', 'zenvora', 'aura', 'soundpulse', 'zenith', 'lumina', 'veloce', 'aerofit', 'omnibrew', 'dermaglow'];
   const foundBrands: string[] = [];
   brandKeywords.forEach(b => {
     if (normalized.includes(b)) foundBrands.push(b);

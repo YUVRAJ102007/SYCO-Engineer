@@ -21,7 +21,7 @@ export const AIAssistantTeaser: React.FC<AIAssistantTeaserProps> = ({ onOpenAssi
             </div>
 
             <h2 className="text-2xl sm:text-4xl font-black tracking-tight leading-tight">
-              Can't Decide? Meet Your Smart Shopping Assistant
+              Can't Decide? Meet Your Zenvora Smart Shopping Assistant
             </h2>
 
             <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">

@@ -60,18 +60,18 @@ export const Footer: React.FC = () => {
         <div>
           <h4 className="font-bold text-white text-sm uppercase tracking-wider mb-3">Get to Know Us</h4>
           <ul className="space-y-2">
-            <li><Link to="/about" className="hover:text-white transition">About Aura Marketplace</Link></li>
+            <li><Link to="/about" className="hover:text-white transition">About Zenvora Marketplace</Link></li>
             <li><Link to="/careers" className="hover:text-white transition">Careers & Engineering</Link></li>
             <li><Link to="/press" className="hover:text-white transition">Press Releases</Link></li>
-            <li><Link to="/science" className="hover:text-white transition">Aura AI & Science</Link></li>
+            <li><Link to="/science" className="hover:text-white transition">Zenvora AI & Science</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-bold text-white text-sm uppercase tracking-wider mb-3">Connect With Us</h4>
           <ul className="space-y-2">
-            <li><a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-white transition">Twitter / X (@AuraMarket)</a></li>
-            <li><a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-white transition">Instagram (@auracommerce)</a></li>
+            <li><a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-white transition">Twitter / X (@ZenvoraMarket)</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-white transition">Instagram (@zenvoracommerce)</a></li>
             <li><a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-white transition">LinkedIn</a></li>
             <li><a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition">Developer API & Docs</a></li>
           </ul>
@@ -80,9 +80,9 @@ export const Footer: React.FC = () => {
         <div>
           <h4 className="font-bold text-white text-sm uppercase tracking-wider mb-3">Make Money with Us</h4>
           <ul className="space-y-2">
-            <li><Link to="/sell" className="hover:text-white transition">Sell on Aura</Link></li>
+            <li><Link to="/sell" className="hover:text-white transition">Sell on Zenvora</Link></li>
             <li><Link to="/brand-protection" className="hover:text-white transition">Brand Protection</Link></li>
-            <li><Link to="/fulfillment" className="hover:text-white transition">Fulfillment by Aura (FBA)</Link></li>
+            <li><Link to="/fulfillment" className="hover:text-white transition">Fulfillment by Zenvora (FBZ)</Link></li>
             <li><Link to="/affiliate" className="hover:text-white transition">Affiliate & Partner Program</Link></li>
           </ul>
         </div>
@@ -103,10 +103,10 @@ export const Footer: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 rounded-md bg-aura-600 flex items-center justify-center text-white font-bold text-xs">
-              A
+              Z
             </div>
-            <span className="font-bold text-slate-300">AURA MARKETPLACE</span>
-            <span>© 2026 Aura Inc. All rights reserved.</span>
+            <span className="font-bold text-slate-300">ZENVORA MARKETPLACE</span>
+            <span>© 2026 Zenvora Inc. All rights reserved.</span>
           </div>
 
           <div className="flex items-center gap-4 text-slate-400">

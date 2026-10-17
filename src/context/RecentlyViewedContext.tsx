@@ -13,11 +13,14 @@ const RecentlyViewedContext = createContext<RecentlyViewedContextType | undefine
 
 export const RecentlyViewedProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [recentlyViewed, setRecentlyViewed] = useState<Product[]>(() => {
-    return loadFromStorage<Product[]>('aura_recently_viewed', []);
+    return (
+      loadFromStorage<Product[]>('zenvora_recently_viewed', null as any) ||
+      loadFromStorage<Product[]>('aura_recently_viewed', [])
+    );
   });
 
   useEffect(() => {
-    saveToStorage('aura_recently_viewed', recentlyViewed);
+    saveToStorage('zenvora_recently_viewed', recentlyViewed);
   }, [recentlyViewed]);
 
   const addToRecentlyViewed = (product: Product) => {

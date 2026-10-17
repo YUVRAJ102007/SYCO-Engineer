@@ -85,7 +85,7 @@ export const CheckoutPage: React.FC = () => {
     setIsProcessing(true);
 
     setTimeout(() => {
-      const orderId = 'AUR-' + Math.floor(100000 + Math.random() * 900000);
+      const orderId = 'ZNV-' + Math.floor(100000 + Math.random() * 900000);
       const estArrival = getEstimatedDeliveryDate(deliverySpeed === 'express' ? 1 : 3);
 
       const paymentDetails: PaymentDetails = {
@@ -118,7 +118,7 @@ export const CheckoutPage: React.FC = () => {
           {
             status: 'placed',
             title: 'Order Placed & Received',
-            description: 'Order confirmed and verified via Aura Checkout Gateway',
+            description: 'Order confirmed and verified via Zenvora Checkout Gateway',
             time: 'Just now',
           },
           {
@@ -560,7 +560,7 @@ export const CheckoutPage: React.FC = () => {
             </div>
 
             <div className="text-[10px] text-slate-400 leading-tight">
-              By placing your order, you agree to Aura Marketplace's Conditions of Use and Privacy Notice.
+              By placing your order, you agree to Zenvora Marketplace's Conditions of Use and Privacy Notice.
             </div>
           </div>
         </div>

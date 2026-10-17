@@ -17,13 +17,16 @@ const ComparisonContext = createContext<ComparisonContextType | undefined>(undef
 
 export const ComparisonProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [compareItems, setCompareItems] = useState<Product[]>(() => {
-    return loadFromStorage<Product[]>('aura_compare_items', []);
+    return (
+      loadFromStorage<Product[]>('zenvora_compare_items', null as any) ||
+      loadFromStorage<Product[]>('aura_compare_items', [])
+    );
   });
   const [isCompareDrawerOpen, setIsCompareDrawerOpen] = useState(false);
   const { success, warning, info } = useNotification();
 
   useEffect(() => {
-    saveToStorage('aura_compare_items', compareItems);
+    saveToStorage('zenvora_compare_items', compareItems);
   }, [compareItems]);
 
   const isInCompare = (productId: string) => {

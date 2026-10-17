@@ -9,7 +9,7 @@ export const AVAILABLE_COUPONS: Coupon[] = [
     description: '10% instant discount on orders above ₹999 (New Customer Welcome)'
   },
   {
-    code: 'AURA500',
+    code: 'ZENVORA500',
     discountType: 'fixed',
     discountValue: 500,
     minimumOrderValue: 2499,

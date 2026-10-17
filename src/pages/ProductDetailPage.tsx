@@ -276,7 +276,7 @@ export const ProductDetailPage: React.FC = () => {
 
             {/* Fulfillment notice */}
             <div className="text-[11px] text-slate-400 space-y-1">
-              <p>Ships from: <strong>Aura Fulfillment Center</strong></p>
+              <p>Ships from: <strong>Zenvora Fulfillment Center</strong></p>
               <p>Sold by: <strong>Official {product.brand} Direct</strong></p>
               <p>7-Day Replacement Guarantee Included</p>
             </div>

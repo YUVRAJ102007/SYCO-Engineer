@@ -119,7 +119,7 @@ export const Header: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-black tracking-wider text-white flex items-center font-sans">
-                AURA
+                ZENVORA
                 <span className="ml-1 text-[10px] font-extrabold px-1.5 py-0.2 rounded bg-indigo-500/20 text-cyan-300 border border-cyan-400/30 uppercase tracking-widest">
                   PRO
                 </span>

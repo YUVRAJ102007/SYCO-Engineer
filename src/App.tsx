@@ -92,7 +92,7 @@ const AppLayout: React.FC = () => {
             <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
           </span>
           <Sparkles size={16} className="text-cyan-200" />
-          <span className="hidden sm:inline">Ask Aura Assistant</span>
+          <span className="hidden sm:inline">Ask Zenvora Assistant</span>
         </button>
       )}
 

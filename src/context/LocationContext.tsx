@@ -40,12 +40,15 @@ const PINCODE_MAP: Record<string, { city: string; state: string; hours: number }
 
 export const LocationProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [location, setLocation] = useState<LocationInfo>(() => {
-    return loadFromStorage<LocationInfo>('aura_delivery_location', DEFAULT_LOCATION);
+    return (
+      loadFromStorage<LocationInfo>('zenvora_delivery_location', null as any) ||
+      loadFromStorage<LocationInfo>('aura_delivery_location', DEFAULT_LOCATION)
+    );
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    saveToStorage('aura_delivery_location', location);
+    saveToStorage('zenvora_delivery_location', location);
   }, [location]);
 
   const updatePincode = (code: string) => {
